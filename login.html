@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body, html {
+  height: 100%;
+  margin: 0;
+}
+    .div1{
+        position:fixed;
+        top:0;
+        right:0;
+        left:0;
+
+    }
+    .bg {
+  
+  background-image: url("study.jpg");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+ul {position:fixed;
+        top:0;
+        right:0;
+        left:0;
+    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(143, 44, 60);
+}
+
+li {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size:large;
+  float: left;
+}
+.h{
+    float:right;
+}
+
+li a {
+    
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: white;
+  color:#1e4174;
+}
+.fixed{
+    position: fixed;
+    top: 100px;
+}
+
+</style>
+</head>
+<body>
+    <br><br><br>
+    <h1 class="fixed" style="color: white;">MARKS MANAGEMENT</h1>
+
+    <ul>
+      <li><a class="active" href="home.html">Home</a></li>
+      <li><a class="active" href="contact.html">Contacts</a></li>
+      <li><a href="about.html">About</a></li>
+      <span class="h"><li><a href="wadproject.html">LOGIN</a></li></span>
+    </ul>
+    <div class="bg"></div>
+</body>
+</html>

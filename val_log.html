@@ -1,0 +1,105 @@
+<html>
+    <head>
+  
+  <script type="text/javascript">
+    function validate(event) {
+       // prevent the form from submitting
+      
+      var strValidate = document.forms["myform"]["str"].value.search(/1BM[0-9]{2}IS[0-9]{3}/i);
+      
+      if (strValidate == -1) {
+        alert("Not Valid");
+        event.preventDefault();
+      } else {
+        alert("Valid");
+      }
+    }
+  </script>
+  
+
+        <style>
+
+
+            body {
+                background-image: url("loggg.jpg");
+              height: 80%; 
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+            
+            .login {
+                background-color: rgb(143, 44, 60)  ;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.2);
+                margin: 50px auto;
+                max-width: 400px;
+                padding: 20px;
+                text-align: center;
+            }
+            
+            h1 {
+                margin-bottom: 20px;
+                color : white;
+            }
+            
+            label {
+                display: block;
+                margin-bottom: 10px;
+                text-align: left;
+                color : white;
+            }
+            
+            input[type="text"],
+            input[type="password"] {
+                border-radius: 5px;
+                padding: 10px;
+                width: 100%;
+            }
+            
+            input[type="button"] {
+                background-color: rgb(143, 44, 60);
+                border: none;
+                border-radius: 5px;
+                color: #fff;
+                cursor: pointer;
+                margin-top: 20px;
+                padding: 10px;
+                width: 100%;
+            }
+            
+            input[type="button"]:hover {
+                background-color: grey;
+            }
+            
+            #error-message {
+                color: red;
+                margin-top: 10px;
+            }
+            
+        </style>
+    </head>
+    <body>
+            
+        <div class="login">
+            <h1>LOGIN</h1>
+            <form id="myform"  name="strForm" onsubmit="validate(event);" action="year_wise_link.html">
+
+                <label for="usn">USN:</label>
+                <input type="text" id="usn" name="str" required>
+                
+                <label for="password">PASSWORD:</label>
+                <input type="password" id="password" name="password" required>
+               
+
+                <input type="submit" value="Submit" >
+            </form>
+        </div>       
+
+    </body>
+</html>
+
+
+
+  
+  

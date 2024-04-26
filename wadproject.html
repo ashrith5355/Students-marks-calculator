@@ -1,0 +1,98 @@
+<html>
+<head>
+<title>wad project </title>
+<style>
+    input:hover{
+        transform: scale(1.5);
+        border-radius: 10;
+        border-color: black;
+        background-color: aquamarine;
+    }
+</style>
+<script>
+        function myfun()
+        {
+            var a = document.getElementById("password").value;
+            
+            if(a == "")
+            {
+                document.getElementById("mes").innerHTML = "please enter ";
+                return false;
+            }
+
+            if(a.length<5)
+            {
+                document.getElementById("mes").innerHTML = "Minimum 5 charecters required ";
+                return false;
+            }
+
+            if(a.length>25)
+            {
+                document.getElementById("mes").innerHTML = "Maximum 25 charecters only ";
+                return false;
+            }
+            
+        } 
+</script>
+<style>
+th:hover{	
+		
+		transform : scale(1.8);
+}
+
+table,td,th {
+	text-align : center;
+	padding : 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.one{
+    background-color: lightgrey;
+    font-size: large;
+}
+button{
+    background-color: lightcoral;
+}
+
+
+</style>
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+</head>
+<body bgcolor = "beige">
+<pre><p>
+<h1><center> WONDERING HOW MUCH MORE TO SCORE TO GET YOUR DESIRED GPA???
+	WELL,YOU'VE COME TO THE RIGHT PLACE!!!</center></h1>
+	<!-- <center><img src="/Users/Ashrith5355/Desktop/image.gif" width="400" height="400" ></center> -->
+	<h2><center> Fill the below information and get started !!! </h2></center>
+
+    <center>
+        <body>
+            <form onsubmit = "return myfun()" action="year_wise_link.html">
+
+                USN   : <input type = "text" id = "usn" value = "" required >
+                <span id="mess"></span>
+                <br>
+            
+                PASSWORD : <input type = "text" id = "password" value = "">
+                <span id = "mes"></span>
+                <br>
+
+                <button type="submit" value = "VERIFY" >Verify </button>
+                
+            <!-- <input type="submit" value = "VERIFY" > --> 
+                </br>
+            </form>
+        </body>
+    </center>
+
+	
+        </table>
+</pre></p>
+
+
+<a href="login.html">Press to go back</a>
+</body>
+</html>
